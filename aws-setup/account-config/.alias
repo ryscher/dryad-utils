@@ -1,0 +1,47 @@
+
+alias cd.='cd .'
+alias cd..='cd ..'
+alias cd...='cd ../..'
+alias cd....='cd ../../..'
+alias cd.....='cd ../../../..'
+alias cls=clear
+alias copy=cp
+alias del=rm
+alias e=emacs
+alias md=mkdir
+alias rd=rmdir
+alias nuke='rm -rf'
+alias d='/bin/echo -; /bin/ls -FG'
+alias dir='/bin/echo -; /bin/ls -laFGh'
+alias dirt='dir -trh |tail -30'
+alias df='/bin/df -kh'
+alias ip='ifconfig  | grep "broadcast" | grep "inet"'
+alias svnc='svn commit -m ""'
+alias top='/usr/bin/top -o cpu'
+alias wget='curl -O '
+alias grep='grep --color=auto'
+alias ping='ping -c 5'
+alias px='ping -c 5 x.com'
+
+alias lo=exit
+alias e='emacs'
+
+alias purge='rm *~ ; rm .*~ ; rm #*#'
+alias purgetex='rm *.aux ; rm *.log ; rm *.dvi'
+alias mkread='chmod -R g+r,o+r'
+alias mkexec='chmod u+x,g+r,o+rx' #group execute permissions can cause problems
+alias dotar='tar cvf'
+alias untar='tar xf'
+alias hog='du -s -x * | sort -n'
+
+alias dev='ssh rsdryad@dryaddev2.lib.ncsu.edu'
+alias prod='ssh rsdryad@dryad2.lib.ncsu.edu'
+alias secundus='ssh rsdryad@dryad-dev.nescent.org'
+
+# When using sudo, use alias expansion (otherwise sudo ignores your aliases)
+alias sudo='sudo '
+
+# Add an "alert" alias for long running commands.  Use like so: 
+#   sleep 10; alert 
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+
